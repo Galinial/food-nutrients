@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="gal.linial.foodappproject.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_foodList"
+        android:name="gal.linial.foodappproject.ui.foodList.FoodListFragment"
+        android:label="@string/title_FoodList"
+        tools:layout="@layout/fragment_food_list">
+        <action
+            android:id="@+id/action_navigation_dashboard_to_foodDetailsFragment"
+            app:destination="@id/foodDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="gal.linial.foodappproject.ui.favorites.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_navigation_favorites_to_favoritesDetailsFragment"
+            app:destination="@id/favoritesDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailsFragment"
+        android:name="gal.linial.foodappproject.ui.foodDetails.FoodDetailsFragment"
+        android:label="@string/title_foodDetails"
+        tools:layout="@layout/food_details_fragment" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="gal.linial.foodappproject.ui.Login.LoginActivity"
+        android:label="@string/title_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/favoritesDetailsFragment"
+        android:name="gal.linial.foodappproject.ui.favoritesDetails.FavoritesDetailsFragment"
+        android:label="FavoritesDetailsFragment" />
+</navigation>

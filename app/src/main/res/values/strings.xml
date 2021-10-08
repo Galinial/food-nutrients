@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FoodAppProject</string>
+    <string name="title_home">Home</string>
+    <string name="title_FoodList">Food List</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_foodDetails">Food Details</string>
+    <string name="title_login">Food Nutrients App</string>
+    <string name="food_list">Food List</string>
+    <string name="title_favorites">Favorites</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
